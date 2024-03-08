@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="/css/admin/dashboard.css">
+    <!-- <link rel="stylesheet" href="/css/admin/dashboard.css"> -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,6 +13,78 @@
     referrerpolicy="no-referrer"
   />
 </head>
+<style>
+.side-container {
+  min-width: 250px;
+  height: 100vh;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid black;
+}
+
+.logo-container {
+  height: 10%;
+  width: 100%;
+}
+
+/* .logo-container img{
+    height: 100%;
+    width: 100%;
+} */
+
+.link-container {
+  height: 90%;
+  padding-top: 3.7rem;
+}
+
+.menu {
+  height: 100%;
+  position: relative;
+  padding: 1.5rem;
+}
+.menu li {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.menu li:hover {
+  background: linear-gradient(to right, rgb(10, 108, 205), rgb(93, 218, 243));
+  color: white;
+}
+
+.menu li a {
+  display: flex;
+  gap: 0.7rem;
+  width: 100%;
+  height: 100%;
+  color: #8a8a8a;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 200px;
+  border-top: 1px solid gray;
+  border-radius: 0 !important;
+}
+
+/* active link*/
+
+.dashboard {
+  background: linear-gradient(to right, rgb(10, 108, 205), rgb(93, 218, 243));
+}
+.dashboard a {
+  color: white !important;
+}
+</style>
 <body>
 
         <aside class="side-container">

@@ -5,4 +5,6 @@ router.get("/dashboard", (req, res) => {
   res.render("admin/adminDashboard.ejs");
 });
 
+
+
 module.exports = router;
