@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/intern/internDashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="side-container">
+        <div class="logo-container">
+          <img src="" alt="" />
+        </div>
+        <div class="link-container">
+          <ul class="menu">
+            <li class="dashboard">
+              <a href="#"
+                ><i class="fa-solid fa-house"></i><span>Dashboard</span></a
+              >
+            </li>
+            <li class="account">
+              <a href="#"
+                ><i class="fa-solid fa-user"></i><span>Account</span></a
+              >
+            </li>
+            <li class="settings">
+              <a href="#"
+                ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+              >
+            </li>
+            <li class="logout">
+              <a href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i
+                ><span>Logout</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-content">
+        <nav class="navbar">
+          <div class="title"><h3>Dashboard</h3></div>
+          <div class="search-container">
+            <div class="search--box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Search"
+                id="myInput"
+                
+              />
+            </div>
+          </div>
+          <div class="icon-container">
+            <a href="#"><i class="fa-solid fa-message"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+          </div>
+          <div class="name-container">
+            <div class="name-position">
+              <h3>Jefferson Garcia</h3>
+              <p>Intern</p>
+            </div>
+          </div>
+          <div class="img-container">
+            <div class="img-holder">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </nav>
+        <!-- time date container ----------------------------------------->
+        <section class="section1">
+          <div class="time-date">
+            <div class="time-title">
+              <p>Time & Date</p>
+            </div>
+
+            <div class="time-cont">
+              <p>Monday march 21 2024</p>
+              <h1>10:57:22 AM</h1>
+            </div>
+          </div>
+          <div class="in-out">
+            <div class="card dark-color">
+              <button class="timeIN">
+                <i class="fa-solid fa-business-time"></i>Time In
+              </button>
+            </div>
+            <div class="card light-color">
+              <button class="timeOut">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>Time Out
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <div class="taskupdate"><p>Task Update</p></div>
+          <textarea
+            class="task"
+            placeholder="Write your task here in a bullet form"
+          ></textarea>
+        </section>
+        <section class="section3">
+          <div class="status-container">
+            <div class="status">
+              <h1>Status: Succesfully</h1>
+            </div>
+            <div class="time-card">
+              <div class="card-time">
+                  <div class="qwe">
+                    <h3>Time In: 10:57 AM March 21, 2024</h3>
+                    <h3>Time Out: No record</h3>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="hours--container">
+            <div class="hours-card">
+                <div class="one">
+                    <h1>540</h1>
+                </div>
+                <div class="two">
+                    <h3>Total Hours Required</h3>
+                </div>
+            </div>
+            <div class="hours-card">
+                <div class="one">
+                    <h1>400</h1>
+                </div>
+                <div class="two">
+                    <h3>Hours Rendered</h3>
+                </div>
+            </div>
+            <div class="hours-card">
+                <div class="one">
+                    <h1>140</h1>
+                </div>
+                <div class="two">
+                    <h3>Hours Left</h3>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
