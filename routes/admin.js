@@ -1,17 +1,18 @@
 const express = require("express");
 const router = express.Router();
 
-const {createUser, updateUser, deleteUser} = require('../controllers/adminControllers')
+const {getUser ,createUser, updateUser, deleteUser} = require('../controllers/adminControllers')
 
-router.get("/dashboard", (req, res) => {
+router.get("/addAccount", (req, res) => {
   res.render("admin/adminDashboard.ejs");
 });
 
-router.post('/', createUser)
+router.get("/getAccount",getUser);
+
+router.post('/createAccount', createUser)
 
 router.put('/', updateUser)
 
-
-router.delete('/', deleteUser)
+router.delete('/deleteAccount/:id', deleteUser)
 
 module.exports = router;

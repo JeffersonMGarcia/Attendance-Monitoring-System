@@ -44,7 +44,7 @@ const errorHandler = (err, req, res, next) => {
       break;
 
     default:
-      console.log("No error All goods");
+      console.log(err.stack);
       res.status(statusCode).send("Internal Server Error"); // Sending a generic error response
       break;
   }

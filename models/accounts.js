@@ -10,7 +10,13 @@ const accountModel = mongoose.Schema({
     course: {
         type: String
     },
+    roles: {
+        type: String
+    },
     hours: {
+        type: String
+    },
+    phone: {
         type: String
     },
     password: {
