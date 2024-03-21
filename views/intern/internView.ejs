@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="/css/intern/internView.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <%- include('../partials/internSidebar.ejs') %>
+    <div class="main-content">
+        <%- include('../partials/internNav') %>
+        <div class="login-container">
+            <div class="araw">
+                <div class="card">
+                    <div class="container">
+                      <div class="cloud front">
+                        <span class="left-front"></span>
+                        <span class="right-front"></span>
+                      </div>
+                      <span class="sun sunshine"></span>
+                      <span class="sun"></span>
+                      <div class="cloud back">
+                        <span class="left-back"></span>
+                        <span class="right-back"></span>
+                      </div>
+                    </div>
+                  
+                    <div class="card-header">
+                      <span>Time and<br>Date</span>
+                      <span>March 21, 2024</span>
+                    </div>
+                  
+                    <span class="temp">11:11am</span>
+                  
+                    <div class="temp-scale">
+                      <span>Time</span>
+                    </div>
+                  </div>
+            </div>
+              <div class="cards-container">
+                <div class="cardings">
+                    <h1>Hours Required</h1>
+                    <p>200</p>
+                </div>
+                <div class="cardings">
+                    <h1>Hours Rendered</h1>
+                    <p>200</p>
+                </div>
+                <div class="cardings">
+                    <h1>Hours Left</h1>
+                    <p>200</p>
+                </div>
+              </div>
+        </div>
+          
+        <div class="timein--container">
+            <div class="pindot-container">
+               <div class="pindotin">
+                <div class="button-one"><button class="button_01">
+                    <a>Time in</a>
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="tree">
+                        <path fill="#593B39" d="M592 267.2h-126.4c-9.28 0-16.64 7.36-16.64 16.64v546.56c0 9.28 7.36 16.64 16.64 16.64h126.4c9.28 0 16.64-7.36 16.64-16.64V284.16c0-9.28-7.36-16.96-16.64-16.96z"></path>
+                        <path fill="#FF944C" d="M921.408 896H140.352a466.4 466.4 0 0 1 390.528-210.88c163.392 0 307.136 83.84 390.528 210.88z"></path>
+                        <path fill="#96C34A" d="M509.44 271.68H193.6c-17.28 0-31.36-15.68-27.84-32.32 15.36-81.28 87.36-143.68 172.8-143.68 86.496 0 159.136 63.552 173.44 146.144 14.336-82.592 86.976-146.144 173.44-146.144 85.44 0 157.44 62.4 172.8 143.68 3.2 16.96-10.56 32.32-27.84 32.32H509.44z"></path>
+                        <path fill="#608842" d="M504 291.2l-98.24 98.24-98.24 98.24c-11.84 11.52-31.68 10.56-40.96-3.2-44.8-65.28-38.08-156.48 19.84-214.4 57.92-57.92 148.8-64.64 214.4-19.84 6.72 4.544 10.432 11.712 11.04 19.2a24.48 24.48 0 0 1 10.4-17.28c63.68-43.52 152-36.8 208.32 19.2 56.32 56.32 62.72 144.64 19.2 208.32-8.96 13.12-28.48 14.4-39.68 2.88l-95.36-95.36-95.36-95.36a26.656 26.656 0 0 1-7.648-16.576 27.296 27.296 0 0 1-7.712 15.936z"></path>
+                        <path fill="#8B5C56" d="M528 351.68a63.68 63.68 0 1 1-127.36 0 63.68 63.68 0 0 1 127.36 0zM655.68 416a64 64 0 1 1-128 0 64 64 0 0 1 128 0z"></path>
+                        <path fill="#00A6ED" d="M960.64 884.16c-0.32-16.32-16.32-33.92-32.64-34.24-32.64-0.32-46.4-17.92-84.16-17.92-55.04 0-55.04 32-110.08 32s-55.04-32-110.4-32c-55.04 0-55.04 32-110.4 32-55.04 0-55.04-32-110.4-32-55.04 0-55.04 32-110.08 32s-55.04-32-110.4-32c-44.16 0-62.08 20.16-92.48 28.16-15.04 4.16-25.6 17.92-25.6 33.28 0 19.2 15.36 34.56 34.56 34.56H931.2c16 0 29.12-12.8 29.44-28.8 0.32-5.12 0.32-10.24 0-15.04z"></path>
+                    </svg>
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 690" class="wave">
+                        <defs>
+                            <linearGradient y2="50%" x2="100%" y1="50%" x1="0%" id="gradient">
+                                <stop stop-color="#8ed1fc" offset="5%"></stop>
+                                <stop stop-color="#0693e3" offset="95%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path transform="rotate(-180 720 350)" class="transition-all duration-300 ease-in-out delay-150 path-0" fill-opacity="0.53" fill="url(#gradient)" stroke-width="0" stroke="none" d="M 0,700 C 0,700 0,233 0,233 C 59.66609412572997,227.46856750257643 119.33218825145994,221.93713500515287 180,209 C 240.66781174854006,196.06286499484713 302.33734111989014,175.720027481965 378,194 C 453.66265888010986,212.279972518035 543.3184472689796,269.1827550669872 620,288 C 696.6815527310204,306.8172449330128 760.388869804191,287.54895225008585 837,272 C 913.611130195809,256.45104774991415 1003.1260735142562,244.62143593266921 1061,257 C 1118.8739264857438,269.3785640673308 1145.106836138784,305.96530401923735 1203,306 C 1260.893163861216,306.03469598076265 1350.4465819306079,269.5173479903813 1440,233 C 1440,233 1440,700 1440,700 Z">
+                        </path>
+                        <defs>
+                            <linearGradient y2="50%" x2="100%" y1="50%" x1="0%" id="gradient">
+                                <stop stop-color="#8ed1fc" offset="5%"></stop>
+                                <stop stop-color="#0693e3" offset="95%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path transform="rotate(-180 720 350)" class="transition-all duration-300 ease-in-out delay-150 path-1" fill-opacity="1" fill="url(#gradient)" stroke-width="0" stroke="none" d="M 0,700 C 0,700 0,466 0,466 C 85.70594297492269,460.8663689453796 171.41188594984538,455.7327378907591 229,478 C 286.5881140501546,500.2672621092409 316.0583991755411,549.935417382343 387,551 C 457.9416008244589,552.064582617657 570.3545173479904,504.52559257986945 655,479 C 739.6454826520096,453.47440742013055 796.5235314324974,449.9622122981794 858,449 C 919.4764685675026,448.0377877018206 985.55135692202,449.62555822741325 1045,437 C 1104.44864307798,424.37444177258675 1157.271040879423,397.5355547921676 1222,400 C 1286.728959120577,402.4644452078324 1363.3644795602886,434.23222260391617 1440,466 C 1440,466 1440,700 1440,700 Z">
+                        </path>
+                    </svg>
+                </button></div>
+                <div class="button-two">
+                    <button class="timeout">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path style="fill:#363636" d="M17.1,21a1,1,0,0,1-1-.945C16.036,18.754,16,17.39,16,16a1,1,0,0,1,2,0c0,1.354.035,2.681.1,3.945A1,1,0,0,1,17.159,21,.5.5,0,0,1,17.1,21Z"></path><path style="fill:#363636" d="M46.9,21a.5.5,0,0,1-.055,0,1,1,0,0,1-.945-1.053c.069-1.264.1-2.591.1-3.945a1,1,0,0,1,2,0c0,1.39-.036,2.754-.106,4.055A1,1,0,0,1,46.9,21Z"></path><path style="fill:#ffbd4a" d="M47.544,24.117A1,1,0,0,0,46.551,23H43a4.005,4.005,0,0,1-.28,1,1.994,1.994,0,0,1-2.056.973A1.947,1.947,0,0,1,39.3,24a3.786,3.786,0,0,1-.3-1H17.449a1,1,0,0,0-.993,1.117A57.092,57.092,0,0,0,19.546,37c.388,0,.732-.009,1.048-.029L20.6,37h4.9a2.5,2.5,0,0,1,0,5,2.5,2.5,0,0,1,0,5,2.5,2.5,0,0,1,0,5H24.3a2.145,2.145,0,0,0-1.515,0h-.038v.01a6.155,6.155,0,0,1-1.029.2,50.273,50.273,0,0,1-1.024,6.1A3,3,0,0,0,23.611,62H40.389a3,3,0,0,0,2.92-3.685A50.2,50.2,0,0,1,42,47c0-3.026.921-5.641,1.988-8.668a.975.975,0,0,0,.05-.324A9.1,9.1,0,0,1,43.045,38H38a3,3,0,0,1,0-6h6.987c.006-.023.012-.048.018-.07.306.036.639.055,1.016.062A54.206,54.206,0,0,0,47.544,24.117Z"></path><path style="fill:#363636" d="M19.421,11a.981.981,0,0,1-.4-.084A1,1,0,0,1,18.506,9.6,6,6,0,0,1,24,6a5.742,5.742,0,0,1,1.58.222A6.99,6.99,0,0,1,37.426,4.585,5.939,5.939,0,0,1,40,4a6.006,6.006,0,0,1,6,6,1,1,0,0,1-2,0,3.991,3.991,0,0,0-6.29-3.271,1,1,0,0,1-1.43-.3,4.991,4.991,0,0,0-9.121,1.344,1,1,0,0,1-1.41.652A3.993,3.993,0,0,0,20.338,10.4,1,1,0,0,1,19.421,11Z"></path><path style="fill:#363636" d="M47,17a1,1,0,0,1-1-1,1,1,0,0,0-1-1h-.17a.831.831,0,0,0-.83.83,1,1,0,0,1-2,0A2.834,2.834,0,0,1,44.83,13H45a3,3,0,0,1,3,3A1,1,0,0,1,47,17Z"></path><path style="fill:#363636" d="M32,20c-.071,0-.143,0-.215,0A4.089,4.088,0,0,1,28,15.83a.831.831,0,0,0-.83-.83H19a1,1,0,0,0-1,1,1,1,0,0,1-2,0,3,3,0,0,1,3-3h8.17A2.834,2.834,0,0,1,30,15.83,2.118,2.118,0,0,0,31.891,18,2,2,0,0,0,34,16a3,3,0,0,1,6,0,1,1,0,0,1-2,0,1,1,0,0,0-2,0,4.017,4.017,0,0,1-1.246,2.9A3.968,3.968,0,0,1,32,20Z"></path><path style="fill:#363636" d="M25.5,43h-5a3.5,3.5,0,0,1,0-7h5a3.5,3.5,0,0,1,0,7Zm-5-5a1.5,1.5,0,0,0,0,3h5a1.5,1.5,0,0,0,0-3Z"></path><path style="fill:#363636" d="M25.5,48h-5a3.5,3.5,0,0,1,0-7h5a3.5,3.5,0,0,1,0,7Zm-5-5a1.5,1.5,0,0,0,0,3h5a1.5,1.5,0,0,0,0-3Z"></path><path style="fill:#363636" d="M25.5,53h-5a3.5,3.5,0,0,1,0-7h5a3.5,3.5,0,0,1,0,7Zm-5-5a1.5,1.5,0,0,0,0,3h5a1.5,1.5,0,0,0,0-3Z"></path><path style="fill:#363636" d="M45,39H38a4,4,0,0,1,0-8h8a1,1,0,0,1,0,2H38a2,2,0,0,0,0,4h7a1,1,0,0,1,0,2Z"></path><path style="fill:#363636" d="M58,37H51a1,1,0,0,1-1-1,3,3,0,0,0-3-3H46a1,1,0,0,1,0-2h1a5.008,5.008,0,0,1,4.9,4H58a1,1,0,0,1,0,2Z"></path><path style="fill:#363636" d="M47,55H46a1,1,0,0,1,0-2h1a3,3,0,0,0,3-3,1,1,0,0,1,1-1h7a1,1,0,0,1,0,2H51.9A5.008,5.008,0,0,1,47,55Z"></path><path style="fill:#363636" d="M41,26a3.152,3.152,0,0,1-.493-.04A3.084,3.084,0,0,1,38,22.893V16a1,1,0,0,1,2,0v6.893a1.083,1.083,0,0,0,.825,1.092A1,1,0,0,0,42,23V15.83a1,1,0,1,1,2,0V23a3,3,0,0,1-3,3Z"></path></svg>
+                        <span> Time out
+                        </span>
+                      </button>
+                </div>
+               </div>
+               <div class="huwag">
+                <div class="cookieCard">
+                    <p class="cookieHeading">Status: Succesfully</p>
+                    <p class="cookieDescription">Time in: 9:00 am</p>
+                     <p class="cookieDescription">Time out: 5:00 pm</p>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="tssk-container">
+                 <div class="last-content">
+                    <div class="task-title"><h1>Task Update</h1></div>
+                    <div class="text-container">
+                      <textarea class="text-areaa" placeholder="Write your task here in a bullet form"></textarea>
+                    </div>
+                 </div>
+            </div>
+        </div>
+ 
+
+    </div>
+</body>
+</html>
