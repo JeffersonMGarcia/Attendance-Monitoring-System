@@ -68,8 +68,10 @@ body {
 }
 .cardings p {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 800;
+  color: rgba(87, 77, 51, 1);
 }
+
 .title {
   color: rgb(16, 137, 211);
 }
@@ -240,8 +242,8 @@ body {
   position: absolute;
   left: 25px;
   bottom: 12px;
-  font-weight: 700;
-  font-size: 60px;
+  font-weight: 800;
+  font-size: 33px;
   line-height: 77px;
   color: rgba(87, 77, 51, 1);
 }
@@ -342,7 +344,7 @@ body {
 }
 
 .cookieDescription {
-  font-size: 0.9em;
+  font-size: 20px;
   color: rgb(241, 241, 241);
   z-index: 2;
 }
@@ -381,6 +383,7 @@ body {
   padding: 1rem;
   border: none;
 }
+
 
 /**********************************btn1***********************************************/
 .button_01 {

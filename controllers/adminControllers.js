@@ -1,14 +1,15 @@
 const asyncHandler = require("express-async-handler");
 const accountModel = require('../models/accounts')
+const bcrypt = require('bcryptjs');
 
 const getUser = asyncHandler(async(req, res) => {
   const account = await accountModel.find();
   res.status(200).json(account)
 })
 
+//CREATING USER
 const createUser = asyncHandler(async(req, res) => {
-    const {name, uname, course, hours, roles, phone, password} = req.body
-   
+    let {name, uname, course, hours, roles, phone, password} = req.body
 
     if(!name || !uname || !course || !hours || !roles || !phone || !password){
         res.status(400)
@@ -21,16 +22,23 @@ const createUser = asyncHandler(async(req, res) => {
     if(checkUsername.length >= 1){
       return res.json({operation: false, msg: "Username already exist"})
     }
+    password = await bcrypt.hash(password, 10)
+
     const account = await accountModel.create({
       name, uname, course, hours, roles, phone, password
     })
   res.status(201).json({operation: true, msg: "Account Created", account});
+  console.log(password)
 });
+
+
 
 const updateUser = (req, res) => {
   res.status(200).json({ message: "Account Updated" });
 };
 
+
+//DELETE ACCOUNT
 const deleteUser = asyncHandler(async(req, res) => {
   const accountId = req.params.id;
 

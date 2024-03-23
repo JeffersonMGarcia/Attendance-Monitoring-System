@@ -12,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -51,12 +57,7 @@
           <div class="search-container">
             <div class="search--box">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                type="text"
-                placeholder="Search"
-                id="myInput"
-                
-              />
+              <input type="text" placeholder="Search" id="myInput" />
             </div>
           </div>
           <div class="icon-container">
@@ -84,7 +85,7 @@
 
             <div class="time-cont">
               <p>Monday march 21 2024</p>
-              <h1>10:57:22 AM</h1>
+              <h1 id="currentDate"><%= current.Date %></h1>
             </div>
           </div>
           <div class="in-out">
@@ -114,41 +115,42 @@
             </div>
             <div class="time-card">
               <div class="card-time">
-                  <div class="qwe">
-                    <h3>Time In: 10:57 AM March 21, 2024</h3>
-                    <h3>Time Out: No record</h3>
-                  </div>
+                <div class="qwe">
+                  <h3>Time In: 10:57 AM March 21, 2024</h3>
+                  <h3>Time Out: No record</h3>
+                </div>
               </div>
             </div>
           </div>
           <div class="hours--container">
             <div class="hours-card">
-                <div class="one">
-                    <h1>540</h1>
-                </div>
-                <div class="two">
-                    <h3>Total Hours Required</h3>
-                </div>
+              <div class="one">
+                <h1>540</h1>
+              </div>
+              <div class="two">
+                <h3>Total Hours Required</h3>
+              </div>
             </div>
             <div class="hours-card">
-                <div class="one">
-                    <h1>400</h1>
-                </div>
-                <div class="two">
-                    <h3>Hours Rendered</h3>
-                </div>
+              <div class="one">
+                <h1>400</h1>
+              </div>
+              <div class="two">
+                <h3>Hours Rendered</h3>
+              </div>
             </div>
             <div class="hours-card">
-                <div class="one">
-                    <h1>140</h1>
-                </div>
-                <div class="two">
-                    <h3>Hours Left</h3>
-                </div>
+              <div class="one">
+                <h1>140</h1>
+              </div>
+              <div class="two">
+                <h3>Hours Left</h3>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </div>
+
   </body>
 </html>
