@@ -32,7 +32,6 @@ body {
   width: 100%;
   display: flex;
   gap: 2.3rem;
-  border: 1px solid red;
 }
 /*cardings*/
 
@@ -44,7 +43,6 @@ body {
 }
 
 .cardings {
-  border: 1px solid blue;
   width: 260px;
   height: 200px;
   display: flex;
@@ -81,7 +79,6 @@ body {
 .araw {
   width: 30%;
   height: 100%;
-  border: 1px solid blue;
 }
 .card {
   width: 350px;
