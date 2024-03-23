@@ -60,14 +60,19 @@
     }
 
     .menu li a {
-      display: flex;
-      gap: 0.7rem;
+      display: grid;
+      grid-template-columns: 35% 65%;
       width: 100%;
       height: 100%;
       color: #8a8a8a;
       text-decoration: none;
       justify-content: center;
       align-items: center;
+    }
+    .menu li a i{
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .logout {
@@ -79,18 +84,6 @@
       border-radius: 0 !important;
     }
 
-    /* active link*/
-
-    /* .dashboard {
-      background: linear-gradient(
-        to right,
-        rgb(10, 108, 205),
-        rgb(93, 218, 243)
-      );
-    }
-    .dashboard a {
-      color: white !important;
-    } */
   </style>
   <body>
     <aside class="side-container">
@@ -113,6 +106,11 @@
           <li class="settings">
             <a href="#"
               ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+            >
+          </li>
+          <li class="summary">
+            <a href="#"
+              ><i class="fa-solid fa-table-list"></i><span>Summary</span></a
             >
           </li>
           <li class="logout">

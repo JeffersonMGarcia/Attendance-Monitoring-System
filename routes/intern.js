@@ -13,4 +13,8 @@ router.get("/internDashboard",(req, res) => {
   res.render('intern/internView.ejs')
 })
 
+router.get("/internSummary", (req, res) => {
+  res.render('intern/internSummary.ejs')
+})
+
 module.exports = router;

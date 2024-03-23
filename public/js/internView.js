@@ -1,23 +1,27 @@
+$(function (e) {
+  function updateDateTime() {
+    const currentDateAndTime = new Date();
+    const date = currentDateAndTime.toDateString();
+    const time = currentDateAndTime.toLocaleTimeString();
 
-$(function (e){
+    const hours = currentDateAndTime.getHours();
+    const mins = currentDateAndTime.getMinutes();
 
-    function updateDateTime() {
-        const currentDateAndTime = new Date();
-        const date = currentDateAndTime.toDateString();
-        const time = currentDateAndTime.toLocaleTimeString();
-
-        $("#currentDate").html(date);
-        $(".temp").html(time);
+    console.log(hours, mins);
+    if (hours === 14 && mins === 41) {
+      
     }
 
-    // Update date and time initially
-    updateDateTime();
+    $("#currentDate").html(date);
+    $(".temp").html(time);
+  }
 
-    // Update date and time every second
-    setInterval(updateDateTime, 1000);
-    
-    $("#timein").click(function(e){
-       console.log(updateDateTime)
-    })
+  // Update date and time initially
+  updateDateTime();
 
-})
+  // Update date and time every second
+  setInterval(updateDateTime, 1000);
+  // const afternoon = 2
+
+  $("#timein").click(function (e) {});
+});

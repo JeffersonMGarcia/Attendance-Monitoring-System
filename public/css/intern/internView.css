@@ -9,13 +9,13 @@ body {
   display: flex;
 }
 .dashboard {
-    color: #fff;
-    background: linear-gradient(to right, rgb(10, 108, 205), rgb(93, 218, 243));
-  }
-  
-  .dashboard a {
-    color: white !important;
-  }
+  color: #fff;
+  background: linear-gradient(to right, rgb(10, 108, 205), rgb(93, 218, 243));
+}
+
+.dashboard a {
+  color: white !important;
+}
 
 .main-content {
   height: 100vh;
@@ -32,20 +32,21 @@ body {
   width: 100%;
   display: flex;
   gap: 2.3rem;
+  border: 1px solid red;
 }
 /*cardings*/
 
 .cards-container {
   height: 100%;
-  width: 75%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
 .cardings {
   border: 1px solid blue;
-  width: 320px;
-  height: 235px;
+  width: 260px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +64,7 @@ body {
 }
 
 .cardings h1 {
-  font-size: 25px;
+  font-size: 18px;
   color: rgb(16, 137, 211);
 }
 .cardings p {
@@ -78,12 +79,13 @@ body {
 
 /*card date container*/
 .araw {
-  width: 25%;
+  width: 30%;
   height: 100%;
+  border: 1px solid blue;
 }
 .card {
   width: 350px;
-  height: 235px;
+  height: 200px;
   position: relative;
   padding: 25px;
   background: radial-gradient(
@@ -365,8 +367,8 @@ body {
 .task-title {
   height: 10%;
 }
-.task-title h1{
-    color: rgb(16, 137, 211);
+.task-title h1 {
+  color: rgb(16, 137, 211);
 }
 
 .text-container {
@@ -384,7 +386,6 @@ body {
   border: none;
 }
 
-
 /**********************************btn1***********************************************/
 .button_01 {
   position: relative;
@@ -398,7 +399,7 @@ body {
   background-color: #deb887;
   border-radius: 1em;
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 20px;
   box-shadow: 0 0 10px #deb887;
   overflow: hidden;
   cursor: pointer;
