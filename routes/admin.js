@@ -11,6 +11,10 @@ router.get("/myDashboard", (req, res) => {
   res.render("admin/Dashboard.ejs");
 })
 
+router.get('/internAccount', (req, res) => {
+  res.render("admin/intern.ejs")
+})
+
 router.get("/getAccount", getUser);
 
 router.post('/createAccount', createUser)
